@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush-Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(79, 79, 235);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(196, 196, 240);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f2;
+            height: 1.2px;
+            margin: 60px 85px;
+        }
+
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .poppins-semibold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .poppins-bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 3rem;
+
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: blueviolet
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 50px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: grey;
+            width: 150;
+            font-size: 15px;
+        }
+
+        /* styles.css */
+
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fcfcfc;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        /* About Section Styles */
+        #about {
+            background-color:  rgb(79, 79, 235);
+            padding: 40px 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .profile-photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            max-width: 600px;
+        }
+
+        .bio p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Education Section Styles */
+        .education {
+            background-color: #280087a4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .education-entry {
+            margin-bottom: 20px;
+        }
+
+        .education-entry h3 {
+            margin: 0 0 10px 0;
+            color: #280087a4;
+        }
+
+        .education-entry p {
+            margin: 5px 0;
+            color: #280087a4;
+        }
+
+
+
+        /* Project Section Styles */
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .ACHIEVEMENTS{
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Piyush' Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Achievements</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi my name is <span class="purple">Piyush</span>
+                <div>and I am a passionate</div>
+                <div>Web Developer</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="known" height="350px" width="350px">
+            </div>
+        </section>
+        <hr>
+        <section>
+            <section class="secondSection">
+                <span class="text-gray">What I have done so far</span>
+                <h1>Work Experience</h1>
+
+                <div class="box">
+                    <div class="vertical">
+                        <img class="image-top" src="known.jpg" alt="">
+                        <div class="vertical-text">
+                            HTML Developer
+                        </div>
+                        <div class="vertical-desc">
+                            Making a College Project.
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <div class="vertical">
+                            <img class="image-top" src="known.jpg" alt="">
+                            <div class="vertical-text">
+                                Android Developer
+                            </div>
+                            <div class="vertical-desc">
+                                Doing Internship making of android app
+                            </div>
+                        </div>
+
+
+
+            </section>
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Android Developer', 'Photographer', 'Traveller'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="Photo.jpeg" alt="Your Photo" class="profile-photo">
+            <div class="bio">
+                <p>Hello! I'm [Piyush Sahare], a Student of BTECH Bhilai Institute Of Technology Durg with a passion for
+                    [Web Developemnt,Android Development]. I specialize in [Data Science] and have experience in
+                    [Vocational Training At BSP SAIL. In my free time, I enjoy I like to listen podcast, travel,
+                    photography.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="6 th semester(Pursuing BTECH)">
+            <h3>BTECH</h3>
+            <p>BHILAI INSTITUTE OF TECHNOLOGY DURG, 2025</p>
+            <p>COMPUTER SCIENCE ENGINEERING IN DATA SCIENCE</p>
+        </div>
+
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="12 TH BOARD">
+            <h3>HIGHTER SCECONARY</h3>
+            <p>KHALSA PUBLIC SCHOOL, 2021</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="10 TH BOARD">
+            <h3>HIGHER SECONDARY</h3>
+            <p>KHALSA PUBLIC SCHOOL, 2019</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="COLLEGE PROJECT">
+            <h3>SMS SPAM CLASSIFIER</h3>
+            <p>MACHINE LEARNING BASED PROJECT</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="PROJECT">
+            <h3>BASIC CALCULATOR</h3>
+            <p>FLUTER BASED PROJECT</p>
+        </div>
+    </section>
+
+    <section id="ACHIEVEMENTS">
+        <h2>ACHIEVEMENTS</h2>
+        <div class="CERTIFICATION OF COMPLECTION">
+            <h3>7 DAYS WITH MACHINE LEARING</h3>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="PIYUSH SAHARE">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="piyushsahare16@gmail.com">Email:</label>
+            <input type="email" id="email" name="email">
+
+
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Piyush</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>
